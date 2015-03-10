@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/tristenmiller/Desktop/Programming/Swift/GistBoard/DerivedData/GistBoard/Build/Products/Debug-iphonesimulator/SwiftHTTP.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/tristenmiller/Desktop/Programming/Swift/GistBoard/DerivedData/GistBoard/Build/Intermediates/SwiftHTTP.build/Debug-iphonesimulator/SwiftHTTP.build/unextended-module.modulemap',
+    }]
+  }]
+}
