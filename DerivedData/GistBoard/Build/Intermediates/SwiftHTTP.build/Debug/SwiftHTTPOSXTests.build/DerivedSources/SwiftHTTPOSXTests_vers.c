@@ -1,1 +1,0 @@
- const unsigned char SwiftHTTPOSXTestsVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:SwiftHTTPOSXTests  PROJECT:SwiftHTTP-1" "\n"; const double SwiftHTTPOSXTestsVersionNumber __attribute__ ((used)) = (double)1.;
