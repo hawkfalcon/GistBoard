@@ -7,71 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54A0A0641B7C16BB00F98453 /* SwiftHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54A0A0631B7C16BB00F98453 /* SwiftHTTP.framework */; };
+		54A0A0651B7C16BB00F98453 /* SwiftHTTP.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 54A0A0631B7C16BB00F98453 /* SwiftHTTP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		54A0A0681B7C16D800F98453 /* SwiftHTTP.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 54A0A0631B7C16BB00F98453 /* SwiftHTTP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		54A0A06C1B7C1B2A00F98453 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A0A06B1B7C1B2A00F98453 /* MenuController.swift */; };
+		54A0A06E1B7C1FBB00F98453 /* GistManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54A0A06D1B7C1FBB00F98453 /* GistManager.swift */; };
 		54B3335E1AAEAE2E0037BEF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B3335D1AAEAE2E0037BEF1 /* AppDelegate.swift */; };
 		54B333621AAEAE2E0037BEF1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54B333611AAEAE2E0037BEF1 /* Images.xcassets */; };
 		54B333651AAEAE2E0037BEF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54B333631AAEAE2E0037BEF1 /* Main.storyboard */; };
 		54B333B31AAEAE790037BEF1 /* GitHubDark.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B333B11AAEAE790037BEF1 /* GitHubDark.png */; };
 		54B333B41AAEAE790037BEF1 /* GitHubLight.png in Resources */ = {isa = PBXBuildFile; fileRef = 54B333B21AAEAE790037BEF1 /* GitHubLight.png */; };
-		54B333B51AAEAE890037BEF1 /* SwiftHTTP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B333AE1AAEAE6E0037BEF1 /* SwiftHTTP.framework */; };
-		54B333B71AAEAEA70037BEF1 /* SwiftHTTP.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 54B333AE1AAEAE6E0037BEF1 /* SwiftHTTP.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		54B333B91AAEAEBA0037BEF1 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B333B81AAEAEBA0037BEF1 /* SwiftyJSON.swift */; };
+		C11AF1BFB42467C5C7026351 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A87E079E8077A5DFDB854F7 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		54B333A91AAEAE6E0037BEF1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 54B333A21AAEAE6E0037BEF1 /* SwiftHTTP.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6BFD901619C8D8B500DD99B6;
-			remoteInfo = SwiftHTTP;
-		};
-		54B333AB1AAEAE6E0037BEF1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 54B333A21AAEAE6E0037BEF1 /* SwiftHTTP.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 6BFD902119C8D8B500DD99B6;
-			remoteInfo = SwiftHTTPTests;
-		};
-		54B333AD1AAEAE6E0037BEF1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 54B333A21AAEAE6E0037BEF1 /* SwiftHTTP.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D958025919E6EEEB003C8218;
-			remoteInfo = SwiftHTTPOSX;
-		};
-		54B333AF1AAEAE6E0037BEF1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 54B333A21AAEAE6E0037BEF1 /* SwiftHTTP.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D958026319E6EEEB003C8218;
-			remoteInfo = SwiftHTTPOSXTests;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
-		54B333B61AAEAE980037BEF1 /* Copy Frameworks */ = {
+		54A0A0661B7C16BB00F98453 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				54B333B71AAEAEA70037BEF1 /* SwiftHTTP.framework in Copy Frameworks */,
+				54A0A0651B7C16BB00F98453 /* SwiftHTTP.framework in Embed Frameworks */,
 			);
-			name = "Copy Frameworks";
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54A0A0671B7C16CB00F98453 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				54A0A0681B7C16D800F98453 /* SwiftHTTP.framework in CopyFiles */,
+			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1A87E079E8077A5DFDB854F7 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54A0A0631B7C16BB00F98453 /* SwiftHTTP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = SwiftHTTP.framework; path = "/Users/tristenmiller/Library/Developer/Xcode/DerivedData/GistBoard-chofsyhxokhxmohdgtimhiphnwcr/Build/Products/Debug/SwiftHTTP.framework"; sourceTree = "<absolute>"; };
+		54A0A06B1B7C1B2A00F98453 /* MenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		54A0A06D1B7C1FBB00F98453 /* GistManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GistManager.swift; sourceTree = "<group>"; };
 		54B333581AAEAE2E0037BEF1 /* GistBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GistBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54B3335C1AAEAE2E0037BEF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54B3335D1AAEAE2E0037BEF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54B333611AAEAE2E0037BEF1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		54B333641AAEAE2E0037BEF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		54B333A21AAEAE6E0037BEF1 /* SwiftHTTP.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftHTTP.xcodeproj; path = "SwiftHTTP-master/SwiftHTTP.xcodeproj"; sourceTree = "<group>"; };
 		54B333B11AAEAE790037BEF1 /* GitHubDark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GitHubDark.png; sourceTree = "<group>"; };
 		54B333B21AAEAE790037BEF1 /* GitHubLight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GitHubLight.png; sourceTree = "<group>"; };
-		54B333B81AAEAEBA0037BEF1 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		54F612981B7C14D0009620CC /* SwiftHTTP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftHTTP.framework; path = "Pods/../build/Debug-iphoneos/SwiftHTTP.framework"; sourceTree = "<group>"; };
+		610C3D37FDD5AE52ACFF2527 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		613ACFB6E2D4BC28948B580E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,18 +66,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54B333B51AAEAE890037BEF1 /* SwiftHTTP.framework in Frameworks */,
+				54A0A0641B7C16BB00F98453 /* SwiftHTTP.framework in Frameworks */,
+				C11AF1BFB42467C5C7026351 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F1625CFBD1ED58BD09818B6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				613ACFB6E2D4BC28948B580E /* Pods.debug.xcconfig */,
+				610C3D37FDD5AE52ACFF2527 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		54B3334F1AAEAE2E0037BEF1 = {
 			isa = PBXGroup;
 			children = (
+				54A0A0631B7C16BB00F98453 /* SwiftHTTP.framework */,
 				54B3335A1AAEAE2E0037BEF1 /* GistBoard */,
 				54B333591AAEAE2E0037BEF1 /* Products */,
+				1F1625CFBD1ED58BD09818B6 /* Pods */,
+				8267E2ABED1C6000F3E3D4DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,8 +106,8 @@
 			isa = PBXGroup;
 			children = (
 				54B3335D1AAEAE2E0037BEF1 /* AppDelegate.swift */,
-				54B333B81AAEAEBA0037BEF1 /* SwiftyJSON.swift */,
-				54B333A21AAEAE6E0037BEF1 /* SwiftHTTP.xcodeproj */,
+				54A0A06B1B7C1B2A00F98453 /* MenuController.swift */,
+				54A0A06D1B7C1FBB00F98453 /* GistManager.swift */,
 				54B333611AAEAE2E0037BEF1 /* Images.xcassets */,
 				54B333631AAEAE2E0037BEF1 /* Main.storyboard */,
 				54B333B11AAEAE790037BEF1 /* GitHubDark.png */,
@@ -125,15 +125,13 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		54B333A31AAEAE6E0037BEF1 /* Products */ = {
+		8267E2ABED1C6000F3E3D4DE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				54B333AA1AAEAE6E0037BEF1 /* SwiftHTTP.framework */,
-				54B333AC1AAEAE6E0037BEF1 /* SwiftHTTPTests.xctest */,
-				54B333AE1AAEAE6E0037BEF1 /* SwiftHTTP.framework */,
-				54B333B01AAEAE6E0037BEF1 /* SwiftHTTPOSXTests.xctest */,
+				54F612981B7C14D0009620CC /* SwiftHTTP.framework */,
+				1A87E079E8077A5DFDB854F7 /* Pods.framework */,
 			);
-			name = Products;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,10 +141,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54B333741AAEAE2E0037BEF1 /* Build configuration list for PBXNativeTarget "GistBoard" */;
 			buildPhases = (
+				3AB1F054B21A7BAD91408BDC /* Check Pods Manifest.lock */,
 				54B333541AAEAE2E0037BEF1 /* Sources */,
 				54B333551AAEAE2E0037BEF1 /* Frameworks */,
 				54B333561AAEAE2E0037BEF1 /* Resources */,
-				54B333B61AAEAE980037BEF1 /* Copy Frameworks */,
+				5431F11BCFF275961A91F717 /* Embed Pods Frameworks */,
+				840B4B1832B07ABAB89F135C /* Copy Pods Resources */,
+				54A0A0661B7C16BB00F98453 /* Embed Frameworks */,
+				54A0A0671B7C16CB00F98453 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -182,49 +184,12 @@
 			mainGroup = 54B3334F1AAEAE2E0037BEF1;
 			productRefGroup = 54B333591AAEAE2E0037BEF1 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 54B333A31AAEAE6E0037BEF1 /* Products */;
-					ProjectRef = 54B333A21AAEAE6E0037BEF1 /* SwiftHTTP.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				54B333571AAEAE2E0037BEF1 /* GistBoard */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		54B333AA1AAEAE6E0037BEF1 /* SwiftHTTP.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftHTTP.framework;
-			remoteRef = 54B333A91AAEAE6E0037BEF1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		54B333AC1AAEAE6E0037BEF1 /* SwiftHTTPTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = SwiftHTTPTests.xctest;
-			remoteRef = 54B333AB1AAEAE6E0037BEF1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		54B333AE1AAEAE6E0037BEF1 /* SwiftHTTP.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = SwiftHTTP.framework;
-			remoteRef = 54B333AD1AAEAE6E0037BEF1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		54B333B01AAEAE6E0037BEF1 /* SwiftHTTPOSXTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = SwiftHTTPOSXTests.xctest;
-			remoteRef = 54B333AF1AAEAE6E0037BEF1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		54B333561AAEAE2E0037BEF1 /* Resources */ = {
@@ -240,12 +205,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3AB1F054B21A7BAD91408BDC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		5431F11BCFF275961A91F717 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		840B4B1832B07ABAB89F135C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		54B333541AAEAE2E0037BEF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54B333B91AAEAEBA0037BEF1 /* SwiftyJSON.swift in Sources */,
+				54A0A06E1B7C1FBB00F98453 /* GistManager.swift in Sources */,
+				54A0A06C1B7C1B2A00F98453 /* MenuController.swift in Sources */,
 				54B3335E1AAEAE2E0037BEF1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,9 +357,15 @@
 		};
 		54B333751AAEAE2E0037BEF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 613ACFB6E2D4BC28948B580E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GistBoard-chofsyhxokhxmohdgtimhiphnwcr/Build/Products/Debug",
+				);
 				INFOPLIST_FILE = GistBoard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -354,9 +374,15 @@
 		};
 		54B333761AAEAE2E0037BEF1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 610C3D37FDD5AE52ACFF2527 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/GistBoard-chofsyhxokhxmohdgtimhiphnwcr/Build/Products/Debug",
+				);
 				INFOPLIST_FILE = GistBoard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
