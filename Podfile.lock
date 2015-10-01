@@ -1,13 +1,13 @@
 PODS:
-  - SwiftHTTP (0.9.5)
-  - SwiftyJSON (2.2.1)
+  - SwiftHTTP (1.0.1)
+  - SwiftyJSON (2.3.0)
 
 DEPENDENCIES:
-  - SwiftHTTP (~> 0.9.4)
-  - SwiftyJSON (~> 2.2.1)
+  - SwiftHTTP
+  - SwiftyJSON
 
 SPEC CHECKSUMS:
-  SwiftHTTP: cd7b248bc07db02926ff54cf19b580b78f7abfa1
-  SwiftyJSON: ae2d0a3d68025d136602a33c4ee215091ced3e33
+  SwiftHTTP: 1c8bb7cf3969c750721392fac1e40a6415e8526e
+  SwiftyJSON: 8d6b61a70277ef2a5d710d372e06e7e2d87fb9e4
 
-COCOAPODS: 0.38.2
+COCOAPODS: 0.39.0.beta.4
