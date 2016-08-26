@@ -1,27 +1,28 @@
-import SwiftHTTP
-import SwiftyJSON
+import Cocoa
 
 class GistManager {
-    let url = "https://api.github.com/gists"
+    let gistCreateUrl = "https://api.github.com/gists"
+    let gistFileName = "gist.txt"
 
     func createGist(content: String) {
-        let params: Dictionary<String,AnyObject> = ["public": true, "files": ["gist.txt": ["content":content]]]
-        do {
-            let opt = try HTTP.POST(url, parameters: params, headers: nil, requestSerializer: JSONParameterSerializer())
-            opt.start { response in
-                let json = JSON(data: response.data)
-                if let html_url = json["html_url"].string {
-                    self.paste(html_url)
+        let params = ["files": [gistFileName: ["content": content]]]
+        let paramsJson = try! JSONSerialization.data(withJSONObject: params, options: [])
+        
+        var request = URLRequest(url: URL(string: gistCreateUrl)!)
+        request.httpMethod = "POST"
+        request.httpBody = paramsJson
+        
+        URLSession.shared.dataTask(with: request) {data, response, err in
+            if let json = try! JSONSerialization.jsonObject(with: data!, options: []) as? [String:AnyObject] {
+                if let htmlUrl = json["html_url"], let content = htmlUrl as? String {
+                    self.paste(content: content)
                 }
-                
             }
-        } catch let error {
-            print("got an error creating the request: \(error)")
-        }
+        }.resume()
     }
     
     func paste(content: String) {
-        let paste = NSPasteboard.generalPasteboard()
+        let paste = NSPasteboard.general()
         paste.clearContents()
         paste.setString(content, forType: NSPasteboardTypeString)
     }
